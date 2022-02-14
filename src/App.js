@@ -2,6 +2,7 @@ import './App.css';
 import Main from './components/Main';
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
+import Contact from './components/Contact.js'
 import {BrowserRouter as Router , Route,Routes} from 'react-router-dom'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={<Main/>}/>
       <Route exact path="/termsandcondition" element={<Terms/>}/>
       <Route exact path="/privacy" element={<Privacy/>}/>
+      <Route exact path="/contact" element={<Contact/>}/>
 
       </Routes>
     </Router>

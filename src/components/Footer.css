@@ -32,6 +32,9 @@
     color: white;
 }
 
+.Footer a:hover{
+    color: white;
+}
 @media screen and (max-width:900px){
     .btn{
         font-size: 0.8rem;

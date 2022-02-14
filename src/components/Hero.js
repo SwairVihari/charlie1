@@ -1,7 +1,5 @@
-import React, {Fragment, useState} from 'react'
-import  Button  from 'react-bootstrap/Button'
-import  Collapse  from 'react-bootstrap/Collapse'
-import Charlie from '../images/upwork_client.PNG'
+import React, {Fragment} from 'react'
+
 import "./Hero.css"
 import Modal1 from './Modal1'
 

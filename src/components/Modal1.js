@@ -4,6 +4,11 @@ import Button from 'react-bootstrap/Button'
 import { Modal } from 'react-bootstrap';
 import "./Modal1.css"
 const Modal1 = () => {
+    const [name, SetName] = useState('');
+    const [email, SetEmail] = useState('');
+    const [phoneNo, SetPhoneNo] = useState(0);
+
+
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -28,14 +33,14 @@ const Modal1 = () => {
               <div className='example-collapse-text-upper'>
                    
                     <div className='form-img-container'>
-                        <img src={Charlie}/>
+                        <img src={Charlie} alt='Coach'/>
                     </div>
                     <h1>Charlie Burton</h1>
               </div>
             <form onSubmit={submitHandler}>
-                <input type='text' placeholder='Name' name='name'/> <br/>
-                <input type='email' placeholder='Email' name='Email'/> <br/>
-                <input type='phone' placeholder='Phonno' name='Phone'/> <br/>
+                <input type='text' onChange={(e)=>{SetName(e.target.value)}} placeholder='Name' name='name'/> <br/>
+                <input type='email' onChange={(e)=>{SetEmail(e.target.value)}} placeholder='Email' name='Email'/> <br/>
+                <input type='phone' onChange={(e)=>{SetPhoneNo(e.target.value)}} placeholder='Phonno' name='Phone'/> <br/>
                 
                 <input type='submit' value='Register'/>
                

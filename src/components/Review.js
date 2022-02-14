@@ -11,9 +11,9 @@ const Review = () => {
             People are raving about the free secrets we’re sharing...
             </h1>
 
-            <img src={review1}></img>
-            <img src={review2}></img>
-            <img src={review3}></img>
+            <img src={review1} alt='Review'></img>
+            <img src={review2} alt='Review'></img>
+            <img src={review3} alt='Review'></img>
         </div>
     </Fragment>
   )

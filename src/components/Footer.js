@@ -1,6 +1,6 @@
-import React, {Fragment,useState} from 'react'
+import React, {Fragment} from 'react'
 import "./Footer.css";
-import {Link} from 'react-router-dom'
+
 import Modal1 from './Modal1';
 const Footer = () => {
     
@@ -21,7 +21,7 @@ const Footer = () => {
         </p>
 
         <p>
-        Copyright © 2022 PublishingLife.com | All Rights Reserved | <a href='/termsandcondition'>Terms of Service</a>   | <a href='/privacy'>Privacy Policy</a>
+        Copyright © 2022 PublishingLife.com | All Rights Reserved | <a href='/termsandcondition'>Terms of Service</a>   | <a href='/privacy'>Privacy Policy</a> | <a href='/contact'>Contact Us</a>
         </p>
         </div>
     </Fragment>
