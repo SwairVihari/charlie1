@@ -27,6 +27,11 @@
     text-align: center;
 }
 
+.Footer a{
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width:900px){
     .btn{
         font-size: 0.8rem;

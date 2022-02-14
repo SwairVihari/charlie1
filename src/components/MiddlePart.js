@@ -1,16 +1,10 @@
-import React, {Fragment, useState} from 'react'
+import React, {Fragment} from 'react'
 import "./MiddlePart.css"
-import  Collapse  from 'react-bootstrap/Collapse'
-import Charlie from '../images/upwork_client.PNG'
-import  Button  from 'react-bootstrap/Button'
-import two_people from '../images/two_people.jpg'
-const MiddlePart = () => {
-    const [open, setOpen] = useState(false);
 
-    const submitHandler = (e) => {
-        e.preventDefault()
-        console.log("This is submit Handler")
-    }
+import two_people from '../images/two_people.jpg'
+import Modal1 from './Modal1'
+const MiddlePart = () => {
+    
   return (
     <Fragment>
         <div className='middle_part'>
@@ -44,31 +38,7 @@ const MiddlePart = () => {
                  </p>
                  </p>
 
-                 <Button
-            onClick={() => setOpen(!open)}
-            aria-controls="example-collapse-text"
-            aria-expanded={open}
-              variant="primary">👉 Access FREE TRAINING Now!</Button>
-            
-            <Collapse in={open} dimension="width">
-          <div id="example-collapse-text">
-              <div className='example-collapse-text-upper'>
-                    <i onClick={()=> {setOpen(false)}} className="fa fa-close"/>
-                    <div className='form-img-container'>
-                        <img src={Charlie}/>
-                    </div>
-              </div>
-            <form onSubmit={submitHandler}>
-                <input type='text' placeholder='Name' name='name'/> <br/>
-                <input type='email' placeholder='Email' name='Email'/> <br/>
-                <input type='phone' placeholder='Phonno' name='Phone'/> <br/>
-                
-                <input type='submit' value='Register'/>
-               
-            </form>
-          </div>
-        </Collapse>
-
+                 <Modal1/>
 
             </div>
         </div>

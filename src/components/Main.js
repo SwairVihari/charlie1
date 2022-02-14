@@ -5,7 +5,7 @@ import Hero from './Hero';
 import MiddlePart from './MiddlePart';
 import Review from './Review';
 const Main = () => {
-  
+ 
       return (
         <div className="App">
          <HeadLine/>
